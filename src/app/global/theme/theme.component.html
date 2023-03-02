@@ -1,0 +1,9 @@
+<button mat-icon-button>
+  <ng-container *ngIf="!theme; else ElseBlock">
+    <mat-icon>wb_sunny</mat-icon>
+  </ng-container>
+  <ng-template #ElseBlock>
+    <mat-icon>star</mat-icon>
+  </ng-template>
+</button>
+
