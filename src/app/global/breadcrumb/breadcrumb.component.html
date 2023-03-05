@@ -1,0 +1,23 @@
+  <nav class="container">
+    <ol>
+      <li>
+        <a routerLink="" class="mat-accent">Home</a>
+      </li>
+      <ng-container *ngIf="recipesCategory">
+        /
+        <li>
+          {{ recipesCategory }}
+        </li>
+      </ng-container>
+      <ng-container *ngIf="recipe">
+        /
+        <li>
+          <a routerLink="/recipe/{{ recipe.strCategory }}" class="mat-accent">{{ recipe.strCategory }}</a>
+        </li>
+        /
+        <li>
+          {{ recipe.strMeal }}
+        </li>
+      </ng-container>
+    </ol>
+  </nav>

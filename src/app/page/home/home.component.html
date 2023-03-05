@@ -1,0 +1,21 @@
+
+<section>
+  <h2>Categories</h2>
+  <app-categories></app-categories>
+</section>
+<section>
+    <h2>20 randoms recipes</h2>
+    <hr class="mat-primary">
+    <ng-container *ngIf="recipes.length > 0 else elseBlock">
+      <app-container-recipes>
+        <ng-container *ngFor="let recipe of recipes">
+          <app-card [recipe]="recipe"></app-card>
+        </ng-container>
+      </app-container-recipes>
+    </ng-container>
+    <ng-template #elseBlock>
+      <div class="spinner-container">
+        <mat-spinner class="spinner"></mat-spinner>
+      </div>
+    </ng-template>
+  </section>

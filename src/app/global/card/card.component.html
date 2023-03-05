@@ -1,0 +1,18 @@
+  <mat-card class="card" >
+    <mat-card-header>
+      <mat-card-title>
+        {{ recipe.strMeal }}
+      </mat-card-title>
+      <mat-card-subtitle>
+       <span>{{ recipe.strCategory }}</span>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <div class="content">
+      <div class="img-container">
+        <img mat-card-image [src]="recipe.strMealThumb" alt="">
+      </div>
+    </div>
+    <mat-card-footer>
+      <button mat-flat-button color="accent" routerLink="/recipe/{{ recipe.strCategory }}/{{ recipe.idMeal }}">see more</button>
+    </mat-card-footer>
+  </mat-card>

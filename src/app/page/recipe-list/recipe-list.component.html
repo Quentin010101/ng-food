@@ -1,0 +1,14 @@
+<app-breadcrumb [recipesCategory]="recipesCategory"></app-breadcrumb>
+<h2 class="mat-primary" *ngIf="recipesCategory">{{ recipesCategory }}</h2>
+<app-container-recipes>
+  <ng-container *ngIf="recipes else elseBlock">
+      <ng-container *ngFor="let recipe of recipes">
+        <app-card [recipe]="recipe"></app-card>
+      </ng-container>
+  </ng-container>
+  <ng-template #elseBlock>
+    <div class="spinner-container">
+      <mat-spinner class="spinner"></mat-spinner>
+    </div>
+  </ng-template>
+</app-container-recipes>

@@ -1,0 +1,28 @@
+<app-breadcrumb [recipe]="recipe"></app-breadcrumb>
+<div *ngIf="recipe">
+  <h2 class="mat-primary">{{ recipe.strMeal }}</h2>
+  <div class="flex">
+    <div class="img-container">
+      <img [src]="recipe.strMealThumb" alt="">
+    </div>
+    <div class="food-container">
+      <h4 class="mat-accent"><mat-icon> restaurant</mat-icon> Ingredients:</h4>
+      <mat-chip-listbox aria-label="ingredient selection">
+        <ng-container *ngFor="let ingredient of recipe.ingredients; let i = index">
+          <ng-container *ngIf="ingredient != '' && ingredient != null">
+            <mat-chip>{{ recipe.measures[i]}} / {{ingredient}}</mat-chip>
+          </ng-container>
+        </ng-container>
+      </mat-chip-listbox>
+    </div>
+  </div>
+  <div class="recipe">
+    <h4 class="mat-accent"><mat-icon> restaurant_menu</mat-icon> Recipe:</h4>
+    <ol>
+      <ng-container *ngFor="let sentence of recipe.strInstructions | sentenceList; let i = index" >
+        <li >{{ sentence }}</li>
+        <hr>
+      </ng-container>
+    </ol>
+  </div>
+</div>

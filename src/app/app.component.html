@@ -1,20 +1,24 @@
 
 <mat-drawer-container class="main-container">
-  <mat-drawer class="side-nav" #drawer mode="side" position="end">
-    <p>Auto-resizing sidenav</p>
+  <mat-drawer class="side-nav" #drawer mode="side" position="start">
+    <a routerLink="hello">hello</a>
+    <a routerLink="">home</a>
   </mat-drawer>
 
+  <div>
+    <mat-toolbar class="mat-toolbar">
+      <span>Logo</span>
+      <span class="spacer"></span>
+      <app-theme [theme]="themeLight" (click)="toggleTheme()"></app-theme>
+      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+    </mat-toolbar>
+    <hr class="mat-primary">
+  </div>
   <main>
-    <div>
-      <mat-toolbar class="mat-toolbar" color="primary">
-        <span>Logo</span>
-        <span class="spacer"></span>
-        <app-theme [theme]="themeLight" (click)="toggleTheme()"></app-theme>
-        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
-      </mat-toolbar>
-    </div>
-
-
+    <app-container-pages>
+      <router-outlet></router-outlet>
+    </app-container-pages>
+    <p>end</p>
   </main>
 </mat-drawer-container>
 

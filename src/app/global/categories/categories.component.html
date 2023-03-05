@@ -1,0 +1,7 @@
+<ng-container *ngIf="categories">
+  <div class="container">
+    <ng-container *ngFor="let category of categories">
+      <a mat-stroked-button color="accent" routerLink="/recipe/{{ category.strCategory }}">{{ category.strCategory }}</a>
+    </ng-container>
+  </div>
+</ng-container>
