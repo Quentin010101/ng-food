@@ -20,7 +20,7 @@
     <h4 class="mat-accent"><mat-icon> restaurant_menu</mat-icon> Recipe:</h4>
     <ol>
       <ng-container *ngFor="let sentence of recipe.strInstructions | sentenceList; let i = index" >
-        <li >{{ sentence }}</li>
+        <li ><p>{{ sentence }}</p></li>
         <hr>
       </ng-container>
     </ol>

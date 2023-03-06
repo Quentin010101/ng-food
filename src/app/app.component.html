@@ -1,10 +1,11 @@
-
 <mat-drawer-container class="main-container">
-  <mat-drawer class="side-nav" #drawer mode="side" position="start">
-    <a routerLink="hello">hello</a>
-    <a routerLink="">home</a>
+  <mat-drawer class="nav-container" #drawer mode="side" position="start">
+    <div class="side-nav">
+      <a routerLink="home" (click)="drawer.toggle()">home</a>
+      <a routerLink="recipe/category" (click)="drawer.toggle()">Categories</a>
+    </div>
   </mat-drawer>
-
+  
   <div>
     <mat-toolbar class="mat-toolbar">
       <span>Logo</span>

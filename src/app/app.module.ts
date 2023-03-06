@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './global/card/card.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
-import { HelloComponent } from './page/hello/hello.component';
 import { AppRoutingModule } from './app.routing.module';
 import { RecipeComponent } from './page/recipe-detail/recipe.component';
 import { BreadcrumbComponent } from './global/breadcrumb/breadcrumb.component';
@@ -25,6 +24,8 @@ import { RecipeListComponent } from './page/recipe-list/recipe-list.component';
 import { ContainerRecipesComponent } from './global/container-recipes/container-recipes.component';
 import { ContainerPagesComponent } from './global/container-pages/container-pages.component';
 import { CategoriesComponent } from './global/categories/categories.component';
+import { FormsModule } from '@angular/forms';
+import { CategoryComponent } from './page/category/category.component';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,14 @@ import { CategoriesComponent } from './global/categories/categories.component';
     ThemeComponent,
     CardComponent,
     HomeComponent,
-    HelloComponent,
     RecipeComponent,
     BreadcrumbComponent,
     SentenceListPipe,
     RecipeListComponent,
     ContainerRecipesComponent,
     ContainerPagesComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategoryComponent
 
   ],
   imports: [
@@ -56,7 +57,7 @@ import { CategoriesComponent } from './global/categories/categories.component';
     MatChipsModule,
     RouterModule,
     AppRoutingModule,
-
+    FormsModule
   ],
   providers: [
   ],

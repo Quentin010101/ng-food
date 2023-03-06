@@ -103,4 +103,13 @@ export class RecipeService {
       map((data) => data.meals)
     )
   }
+
+  // Get Categories info
+  getCategoriesInfo(): Observable<Categories[]>{
+    return this.http.get<any>(this.apiUrl + '/categories.php').pipe(
+      map((data) => {
+        return data.categories
+      })
+    )
+  }
 }

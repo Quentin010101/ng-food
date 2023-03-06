@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+
+    .category {
+        max-width: 20rem;
+
+        img {
+            max-width: 20rem;
+        }
+    }
+
+}

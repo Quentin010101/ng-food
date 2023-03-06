@@ -1,0 +1,11 @@
+
+<ng-container *ngIf="categories">
+    <ng-container *ngFor="let category of categories">
+        <div class="category">
+            <h3 class="mat-primary mat-h2">{{ category.strCategory }}</h3>
+            <img [src]="category.strCategoryThumb" alt="{{ category.strCategory }}">
+                <p>{{ category.strCategoryDescription }}</p>     
+            <button mat-stroked-button color="accent" routerLink="/recipe/{{ category.strCategory }}">See all recipes</button>
+        </div>
+    </ng-container>
+</ng-container>
