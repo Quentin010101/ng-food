@@ -1,11 +1,11 @@
 
 # Angular Food Project
 A front end project using angular and the api TheMealDb.
-<br>
+This project was generated with Angular CLI version 12.0.3. It uses the TheMealDB API to search for meals based on user input.
+
+## Image
 <img alt="alt_text" width="400px" src="https://i.ibb.co/k1xXsNF/c1.png" />
 <img alt="alt_text" width="400px" src="https://i.ibb.co/jfzDBhK/c2.png" />
-<br>
-This project was generated with Angular CLI version 12.0.3. It uses the TheMealDB API to search for meals based on user input.
 
 ## Prerequisites
 To run this project, you need to have Node.js and npm (Node Package Manager) installed on your machine. You can download them from the official Node.js website.
