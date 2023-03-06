@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     .category {
         max-width: 20rem;
@@ -13,4 +13,20 @@
         }
     }
 
+}
+
+@media (max-width: 700px){
+    :host {
+        gap: 1.5rem;
+        margin-top: 0.8rem;
+    
+        .category {
+            max-width: 16rem;
+    
+            img {
+                max-width: 16rem;
+            }
+        }
+    
+    } 
 }

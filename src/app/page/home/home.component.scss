@@ -16,4 +16,26 @@ h2{
   font-size: 1.2em;
   margin-bottom: 0.2rem;
 }
+.header-p{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 3rem 1rem 4rem 1rem;
+  opacity: 0.85;
+  letter-spacing: 0.2rem;
+}
+strong{
+  opacity: 0.85;
+}
+@media (max-width: 700px){
+  .header-p{
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+    opacity: 0.85;
+    letter-spacing: 0.1rem;
+  }
+  hr{
+    margin-bottom: 1.5rem;
+  }
+}
 
