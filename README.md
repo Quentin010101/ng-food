@@ -1,8 +1,7 @@
 
 # Angular Food Project
 A front end project using angular and the api TheMealDb.
-
-![alt text](https://ibb.co/rpfFMp7)
+![alt text](https://i.ibb.co/k1xXsNF/c1.png)
 
 This project was generated with Angular CLI version 12.0.3. It uses the TheMealDB API to search for meals based on user input.
 
